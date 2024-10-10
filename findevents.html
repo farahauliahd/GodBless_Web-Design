@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Events - Hapnin'</title>
+    <link rel="stylesheet" href="findeventstyles.css">
+</head>
+<body>
+    <div class="desktop">
+        <header>
+            <div class="logo">
+                <a href="hapnincoba.html">
+                    <img src="LOGOOO1.png" alt="HAPNIN'">
+                </a>
+            </div>
+            <form id="search-form" action="findevents.html" method="GET">
+                <div class="search-bar">
+                    <input type="text" name="q" placeholder="Search Events">
+                </div>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="HOME.html">HOME</a></li>
+                    <li><a href="findevents.html">FIND EVENTS</a></li>
+                    <li><a href="login.html" class="btn">LOGIN</a></li>
+                    <li><a href="signup.html" class="btn">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="search-results" style="display: none;">
+                <h2>Search Results</h2>
+                <p id="result-count"></p>
+            </div>
+            <div class="event-categories">
+                <button class="category-btn active" data-category="all">All Events</button>
+                <button class="category-btn" data-category="music">Music</button>
+                <button class="category-btn" data-category="knowledge">Knowledge</button>
+                <button class="category-btn" data-category="festival">Festival</button>
+            </div>
+            <div class="events-container">
+                <!-- Event cards will be dynamically added here -->
+            </div>
+        </main>
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="" alt="" class="modal-image">
+                <h2 class="modal-title"></h2>
+                <p class="modal-description"></p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h2>Discover What's <span>Hapnin?</span><br>in Surabaya</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                </div>
+                <a href="mailto:info@hapnin.com" class="email">info@hapnin.com</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

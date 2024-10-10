@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.signup-section {
+    background-color: #FF4B91;
+    flex-grow: 1;
+    padding: 40px;
+    position: relative;
+}
+
+.top-logo {
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.signup-form {
+    max-width: 400px;
+}
+
+.signup-form h2 {
+    color: #6C22A6;
+    font-family: "Caprasimo-Regular", cursive;
+    font-size: 24px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.signup-form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Rasa-Regular";
+    font-size: 16px;
+}
+
+.sign-up-btn {
+    background-color: #FFB100;
+    color: #6C22A6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "BM-HANNA", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.sign-up-btn:hover {
+    background-color: #6C22A6;
+    color: #ffffff;
+}
+
+.signup-image {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 100%;
+}
+
+footer {
+    background-color: #6C22A6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-family: "BM-HANNA", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-content span {
+    color: #FFB100;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .monument-image {
+        position: static;
+        display: block;
+        margin: 40px auto 0;
+        max-width: 100%;
+        transform: none;
+    }
+    
+    .signup-form {
+        margin: 0 auto;
+    }
+}
